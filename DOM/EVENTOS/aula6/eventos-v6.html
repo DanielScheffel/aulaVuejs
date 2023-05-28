@@ -10,11 +10,8 @@
 <body>
     
     <div id="app">
-        <p v-once>{{ titulo }}</p>
-        <p>{{ saudacao() }}</p>
-        <a v-bind:href="link">Google</a>
-        <hr>
-        <p v-html="linkHtml"></p>
+        <p>{{ contador }}</p>
+        <button v-on:click="somar">Somar 1</button>
     </div>
 
     <script src="./app.js"></script>
